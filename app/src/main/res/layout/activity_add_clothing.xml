@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/ClothesImage"
+            android:layout_width="152dp"
+            android:layout_height="173dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_launcher_background"
+            tools:srcCompat="@drawable/ic_launcher_background" />
+
+        <LinearLayout
+            android:id="@+id/ClothesNameLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ClothesImage"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/ClothesNameText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Kıyafet Adı" />
+
+            <EditText
+                android:id="@+id/ClothesName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:hint="Ürününüze bir isim verin" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ClothesColorLayout"
+            android:layout_below="@+id/ClothesNameLayout"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/ClothesColorText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kıyafet Rengi"
+                android:layout_margin="10dp"
+                />
+            <EditText
+                android:id="@+id/ClothesColor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:hint="Ürünün rengini girin"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ClothesTextureLayout"
+            android:layout_below="@+id/ClothesColorLayout"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/ClothesTextureText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kıyafet Deseni"
+                android:layout_margin="10dp"
+                />
+            <EditText
+                android:id="@+id/ClothesTexture"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Ürünün desenini girin"
+                android:layout_margin="10dp"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ClothesPriceLayout"
+            android:layout_below="@+id/ClothesTextureLayout"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/ClothesPriceText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fiyat"
+                android:layout_margin="10dp"
+                />
+            <EditText
+                android:id="@+id/ClothesPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Ürününüzün fiyatını girin"
+                android:layout_margin="10dp"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ClothesTypeLayout"
+            android:layout_below="@+id/ClothesPriceLayout"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/ClothesTypeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tür"
+                android:layout_margin="10dp"
+                />
+            <EditText
+                android:id="@+id/ClothesType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Ürün türünü girin"
+                android:layout_margin="10dp"
+                />
+
+
+        </LinearLayout>
+<!--        <LinearLayout-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:id="@+id/ClothesBuyDateLayout"-->
+<!--            android:layout_below="@+id/ClothesTypeLayout"-->
+<!--            android:orientation="horizontal">-->
+<!--            <TextView-->
+<!--                android:id="@+id/ClothesBuyDateText"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Alım Tarihi"-->
+<!--                android:layout_margin="10dp"-->
+<!--                />-->
+<!--           <EditText-->
+<!--               android:layout_width="wrap_content"-->
+<!--               android:layout_height="wrap_content"-->
+<!--               android:hint="YYYY-MM-DD"-->
+<!--               android:layout_margin="10dp"-->
+<!--               android:id="@+id/buyDateEntry"-->
+<!--               />-->
+
+
+<!--        </LinearLayout>-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ClothesDrawerNameLayout"
+            android:layout_below="@+id/ClothesTypeLayout"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/ClothesDrawerNameText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Çekmece Adı"
+                android:layout_margin="10dp"
+                />
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Çekmece Adını Giriniz"
+                android:layout_margin="10dp"
+                android:id="@+id/ClothesDrawerName"
+                />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/ClothesDrawerNameLayout">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnAdd"
+                android:text="Ekle"
+                />
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+</ScrollView>
